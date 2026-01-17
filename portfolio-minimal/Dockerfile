@@ -14,5 +14,5 @@ COPY --from=builder /app/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 # Cloud Run expects the app to listen on the PORT environment variable
 # But Nginx listens on 80 by default, which Cloud Run maps automatically.
-EXPOSE 80
+EXPOSE 8080
 CMD ["nginx", "-g", "daemon off;"]
