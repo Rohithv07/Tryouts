@@ -2,7 +2,7 @@
 
 A **Minimal, Fresh, and Clean** personal portfolio website built with React, Vite, and Tailwind CSS. It features a dual-interface design: a stunning standard scroll view and a geeky **Terminal Mode** for CLI enthusiasts.
 
-![Portfolio Preview](https://rohithv07.github.io/Tryouts/)
+[Portfolio Preview](https://rohithv07.github.io/Tryouts/)
 
 ## ✨ Features
 
