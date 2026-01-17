@@ -4,6 +4,10 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
+# --- ADD THIS NEW LINE BELOW ---
+# This overrides the base path to "/" specifically for Cloud Run
+ENV BASE_PATH=/
+# -------------------------------
 RUN npm run build
 
 # Stage 2: Serve with Nginx

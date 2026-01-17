@@ -1,16 +1,19 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig(({ command }) => {
-  const config = {
-    plugins: [react()],
-    base: '/',
-  }
+  // Default: assumes we are developing locally
+  let baseConfig = '/'
 
+  // If we are building for production (npm run build)
   if (command !== 'serve') {
-    config.base = '/Tryouts/'
+    // Check if we passed a specific base path (e.g. from Docker)
+    // If not, default to '/Tryouts/' for GitHub Pages
+    baseConfig = process.env.BASE_PATH || '/Tryouts/'
   }
 
-  return config
+  return {
+    plugins: [react()],
+    base: baseConfig,
+  }
 })
