@@ -75,10 +75,10 @@ const Experience = () => {
                                 {exp.year}
                             </div>
 
-                            <h3 className="text-xl font-semibold mb-1 group-hover:text-accent transition-colors">
+                            <h3 className="text-xl font-semibold mb-1 group-hover:text-accent transition-colors text-primary">
                                 {exp.role}
                             </h3>
-                            <div className="text-base mb-4 font-medium text-primary/90">
+                            <div className="text-base mb-4 font-medium text-primary">
                                 {exp.company}
                             </div>
 

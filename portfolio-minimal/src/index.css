@@ -11,7 +11,7 @@
 }
 
 /* Dark mode overrides */
-.dark :root {
+:root.dark {
   --bg-color: #0d0d0d;
   --text-primary: #ffffff;
   --text-secondary: #a0a0a0;
@@ -33,11 +33,11 @@
 }
 
 .bg-accent {
-  backgroundColor: rgb(var(--accent-rgb));
+  background-color: rgb(var(--accent-rgb));
 }
 
 .border-accent {
-  borderColor: rgb(var(--accent-rgb));
+  border-color: rgb(var(--accent-rgb));
 }
 
 /* Transitions */
@@ -45,6 +45,11 @@
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
+}
+
+body {
+  color: var(--text-primary);
+  background-color: var(--bg-color);
 }
 
 /* Cursor styles removed */

@@ -14,7 +14,7 @@ const Skills = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-gray-200 dark:border-white/20 pt-8">
                 {skillCategories.map((cat, i) => (
                     <div key={i}>
-                        <h3 className="text-lg font-semibold mb-2">{cat.label}</h3>
+                        <h3 className="text-lg font-semibold mb-2 text-primary">{cat.label}</h3>
                         <p className="text-secondary leading-relaxed">
                             {cat.items}
                         </p>

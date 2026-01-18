@@ -71,7 +71,7 @@ const ChatBot = () => {
                         className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-xl w-80 mb-4 overflow-hidden flex flex-col"
                     >
                         <div className="p-4 bg-gray-50 dark:bg-gray-800/50 border-b border-gray-100 dark:border-gray-800 flex justify-between items-center">
-                            <h3 className="font-semibold text-sm">Navigation Assistant</h3>
+                            <h3 className="font-semibold text-sm dark:text-white">Navigation Assistant</h3>
                             <button onClick={() => setIsOpen(false)} className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-200">
                                 <X size={16} />
                             </button>
