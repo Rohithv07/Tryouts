@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const ChatBot = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState([
-        { text: "Hi! I can help you navigate. Try asking for 'experience', 'skills', or 'contact'.", sender: 'bot' }
+        { text: "Hi! I can help you navigate. Try asking for 'experience', 'skills', 'writing', or 'contact'.", sender: 'bot' }
     ]);
     const [input, setInput] = useState("");
     const messagesEndRef = useRef(null);
@@ -23,7 +23,7 @@ const ChatBot = () => {
         setMessages(prev => [...prev, userMessage]);
 
         const lowerInput = input.toLowerCase();
-        let botResponse = { text: "I'm not sure about that section. Try 'experience', 'skills', 'projects', or 'contact'.", sender: 'bot' };
+        let botResponse = { text: "I'm not sure about that section. Try 'experience', 'skills', 'projects', 'writing', or 'contact'.", sender: 'bot' };
         let sectionId = null;
 
         if (lowerInput.includes('experience') || lowerInput.includes('work') || lowerInput.includes('job')) {
@@ -41,6 +41,9 @@ const ChatBot = () => {
         } else if (lowerInput.includes('contact') || lowerInput.includes('email') || lowerInput.includes('touch')) {
             sectionId = 'contact';
             botResponse.text = "Let's get in touch!";
+        } else if (lowerInput.includes('writing') || lowerInput.includes('blog') || lowerInput.includes('article') || lowerInput.includes('post')) {
+            sectionId = 'articles';
+            botResponse.text = "Here are my latest articles...";
         }
 
         setTimeout(() => {
