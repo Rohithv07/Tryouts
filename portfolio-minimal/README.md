@@ -12,6 +12,7 @@ A **Minimal, Fresh, and Clean** personal portfolio website built with React, Vit
 -   **Smart Navigation**:
     -   **ChatBot**: An AI-style assistant that scrolls you to sections (e.g., "Show me your skills").
     -   **Smooth Scroll**: Polished scroll interactions.
+    -   **Live Blog Feed**: Connects to the Dev.to API to display latest articles dynamically.
 -   **Theming**:
     -   **Dark/Light Toggle**: Seamless switching between light (fresh) and dark (sleek) themes.
 -   **Modern Tech Stack**:
@@ -30,6 +31,7 @@ The goal was to build a portfolio that stands out by doing *less*.
 -   **Hero**: Minimal introduction with resume download and social links.
 -   **Experience**: Time-line style work history.
 -   **Highlights**: "Most Proud Of" section with card layouts.
+-   **Latest Writing**: Dynamic feed of recent blog posts from Dev.to.
 -   **Skills**: Technical stack showcase.
 -   **Contact**: Pill-shaped interactive contact links.
 
