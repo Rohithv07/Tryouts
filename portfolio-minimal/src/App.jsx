@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Moon, Sun, Download, Laptop } from 'lucide-react';
+import { motion, useScroll } from 'framer-motion';
 import Hero from './components/Hero';
 import Experience from './components/Experience';
 import Highlights from './components/Highlights';
@@ -8,6 +9,7 @@ import Education from './components/Education';
 import Contact from './components/Contact';
 import ChatBot from './components/ChatBot';
 import TerminalMode from './components/TerminalMode';
+import LatestArticles from './components/LatestArticles';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -25,8 +27,17 @@ function App() {
     setTheme(prev => prev === 'light' ? 'dark' : 'light');
   };
 
+  const { scrollYProgress } = useScroll();
+
   return (
     <div className="min-h-screen selection:bg-accent/20 transition-colors duration-300 bg-[var(--bg-color)]">
+
+      {/* Scroll Progress Bar */}
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1 bg-accent origin-left z-[100]"
+        style={{ scaleX: scrollYProgress }}
+      />
+
       <nav className="fixed top-0 w-full p-6 flex justify-end items-center z-50 pointer-events-none mix-blend-difference text-white">
 
         <div className="flex items-center gap-4 pointer-events-auto">
@@ -66,6 +77,7 @@ function App() {
           <Hero />
           <Experience />
           <Highlights />
+          <LatestArticles />
           <Skills />
           <Education />
           <Contact />
