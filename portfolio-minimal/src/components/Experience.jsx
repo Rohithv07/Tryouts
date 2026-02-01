@@ -9,7 +9,7 @@ const Experience = () => {
             role: 'Senior Application Engineer',
             company: 'Oracle',
             desc: [
-                'Developed a specialized Redwood Oracle Sales Cloud UI Migration Tool, facilitating seamless migration for ~5,000 customers.',
+                'Developed a specialized Redwood Oracle Sales Cloud UI Migration Tool, facilitating seamless migration for ~500 customers.',
                 'Architected the end-to-end UI for an Agentic AI tool, reducing sales flow generation time to under one minute.',
                 'Served as POC for the PSR team, directing frontend optimizations to ensure performance baselines.',
                 'Collaborated to resolve critical bugs, increasing automation pass rates to 95%.'
