@@ -53,7 +53,7 @@ function App() {
           )}
 
           <a
-            href="/RohithV.pdf"
+            href={`${import.meta.env.BASE_URL}RohithV.pdf`}
             download="Rohith_Vazhathody_Resume.pdf"
             className="flex items-center gap-2 text-sm font-medium hover:opacity-70 transition-opacity"
           >
